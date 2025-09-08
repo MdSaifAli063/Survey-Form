@@ -101,8 +101,8 @@ No build step required. All files are static and ready to serve.
 ## 📸 Screenshots (optional)
 
 - Add your screenshots to /assets and link them here:
-  - ![Desktop Screenshot](assets/screenshot-desktop.png)
-  - ![Mobile Screenshot](assets/screenshot-mobile.png)
+  - ![image]()
+  - 
 
 ## 📜 License
 
