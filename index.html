@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Survey Form</title>
+  <meta name="description" content="Website Survey Form to help us improve our website." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- App styles -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Defer JS to keep page fast -->
+   <script src="script.js" defer></script>
+</head>
+
+<body>
+  <noscript>
+    <div class="no-js-banner">This site works best with JavaScript enabled.</div>
+  </noscript>
+
+  <div class="page">
+    <header class="page-header">
+      <h1 id="title">Website Survey Form</h1>
+      <p id="description">Kindly fill out the form to help us improve our website</p>
+
+      <!-- Progress -->
+      <div class="progress" aria-hidden="true">
+        <div class="progress-bar" id="form-progress" style="width:0%"></div>
+      </div>
+    </header>
+
+    <main>
+      <section aria-labelledby="title">
+        <!-- Keep id=survey-form for FCC tests -->
+        <form id="survey-form" action="#" method="post" novalidate>
+          <!-- Personal Information -->
+          <fieldset class="card">
+            <legend>Personal Information</legend>
+
+            <div class="grid grid-2">
+              <div class="form-control">
+                <label for="name" id="name-label">First Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="firstName"
+                  placeholder="John"
+                  autocomplete="given-name"
+                  required
+                />
+                <small class="error-text" aria-live="polite"></small>
+              </div>
+
+              <div class="form-control">
+                <label for="lname">Last Name</label>
+                <input
+                  type="text"
+                  id="lname"
+                  name="lastName"
+                  placeholder="Doe"
+                  autocomplete="family-name"
+                  required
+                />
+                <small class="error-text" aria-live="polite"></small>
+              </div>
+            </div>
+
+            <div class="form-control">
+              <label for="email" id="email-label">Your Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="johndoe@gmail.com"
+                autocomplete="email"
+                required
+              />
+              <small class="error-text" aria-live="polite"></small>
+            </div>
+
+            <div class="form-control">
+              <label for="number" id="number-label">Your Age</label>
+              <input
+                type="number"
+                id="number"
+                name="age"
+                min="1"
+                max="80"
+                placeholder="24"
+                inputmode="numeric"
+              />
+              <small class="error-text" aria-live="polite"></small>
+            </div>
+          </fieldset>
+
+          <!-- Discovery and Usage -->
+          <fieldset class="card">
+            <legend>Discovery and Usage</legend>
+
+            <div class="form-control">
+              <label for="dropdown">How did you hear about this website?</label>
+              <select id="dropdown" name="discovery" required>
+                <option value="" disabled selected>Select an option</option>
+                <option value="social">Social Media</option>
+                <option value="ad">Advertisement</option>
+                <option value="search">Search Engine</option>
+                <option value="friends">My Friends</option>
+                <option value="other">Other</option>
+              </select>
+              <small class="error-text" aria-live="polite"></small>
+            </div>
+
+            <div class="form-control">
+              <span class="label">Which device(s) do you normally use to access the website?</span>
+              <ul class="option-list">
+                <li>
+                  <input type="checkbox" id="device-desktop" name="devices" value="desktop" />
+                  <label for="device-desktop">Desktop/Laptop</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="device-mobile" name="devices" value="mobile" />
+                  <label for="device-mobile">Mobile Devices</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="device-tablet" name="devices" value="tablet" />
+                  <label for="device-tablet">Tablet/iPad</label>
+                </li>
+              </ul>
+            </div>
+
+            <div class="form-control">
+              <span class="label">What browser do you normally use to access the website?</span>
+              <ul class="option-list">
+                <li>
+                  <input type="radio" id="br-firefox" name="browser" value="firefox" />
+                  <label for="br-firefox">Mozilla Firefox</label>
+                </li>
+                <li>
+                  <input type="radio" id="br-chrome" name="browser" value="chrome" />
+                  <label for="br-chrome">Google Chrome</label>
+                </li>
+                <li>
+                  <input type="radio" id="br-edge" name="browser" value="edge" />
+                  <label for="br-edge">Microsoft Edge</label>
+                </li>
+                <li>
+                  <input type="radio" id="br-safari" name="browser" value="safari" />
+                  <label for="br-safari">Safari</label>
+                </li>
+                <li>
+                  <input type="radio" id="br-opera" name="browser" value="opera" />
+                  <label for="br-opera">Opera</label>
+                </li>
+                <li>
+                  <input type="radio" id="br-other" name="browser" value="other" />
+                  <label for="br-other">Other</label>
+                </li>
+              </ul>
+            </div>
+
+            <div class="form-control">
+              <span class="label">Are you satisfied with the website?</span>
+              <ul class="option-list">
+                <li>
+                  <input type="radio" id="sat-very" name="satisfaction" value="very-satisfied" />
+                  <label for="sat-very">Very Satisfied</label>
+                </li>
+                <li>
+                  <input type="radio" id="sat-satisfied" name="satisfaction" value="satisfied" />
+                  <label for="sat-satisfied">Satisfied</label>
+                </li>
+                <li>
+                  <input type="radio" id="sat-neutral" name="satisfaction" value="neutral" />
+                  <label for="sat-neutral">Neutral</label>
+                </li>
+                <li>
+                  <input type="radio" id="sat-unsatisfied" name="satisfaction" value="unsatisfied" />
+                  <label for="sat-unsatisfied">Unsatisfied</label>
+                </li>
+                <li>
+                  <input type="radio" id="sat-very-unsatisfied" name="satisfaction" value="very-unsatisfied" />
+                  <label for="sat-very-unsatisfied">Very Unsatisfied</label>
+                </li>
+              </ul>
+            </div>
+
+            <div class="form-control">
+              <label for="rating">Overall rating (1–10)</label>
+              <div class="range-row">
+                <input type="range" id="rating" name="rating" min="1" max="10" value="7" />
+                <output id="rating-output" for="rating">7</output>
+              </div>
+            </div>
+          </fieldset>
+
+          <!-- Feedback -->
+          <fieldset class="card">
+            <legend>Feedback</legend>
+
+            <div class="form-control">
+              <label for="comments">Additional Comments</label>
+              <textarea
+                id="comments"
+                name="comments"
+                placeholder="Your feedback helps us improve..."
+                rows="4"
+                maxlength="500"
+                aria-describedby="comment-help comment-count"
+              ></textarea>
+              <div class="help-row">
+                <small id="comment-help">Max 500 characters</small>
+                <small id="comment-count" aria-live="polite">0/500</small>
+              </div>
+            </div>
+
+            <div class="form-control inline" id="consent-group">
+              <input type="checkbox" id="consent" name="consent" required />
+              <label for="consent">I agree to the processing of my information according to the privacy policy.</label>
+              <small class="error-text" aria-live="polite"></small>
+            </div>
+          </fieldset>
+
+          <div class="actions">
+            <button type="submit" id="submit" class="btn-primary">Submit</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <span>Made in India</span>
+    </footer>
+  </div>
+
+  <!-- Toasts / Announcements -->
+  <div class="toast-wrap" role="status" aria-live="polite" aria-atomic="true">
+    <div id="toast" class="toast" hidden></div>
+  </div>
+</body>
+</html>
