@@ -106,7 +106,6 @@ No build step required. All files are static and ready to serve.
 
   - ![image](https://github.com/MdSaifAli063/Survey-Form/blob/9d2ad193e639f1ec63e9d2098d5b2aae5b3f3417/Screenshot%202025-09-09%20004212.png)
 
-
 ## 📜 License
 
 MIT — free to use, modify, and distribute. Attribution appreciated.
