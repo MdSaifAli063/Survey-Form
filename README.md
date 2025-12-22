@@ -61,6 +61,7 @@ http://localhost:8080
   - Rating range: change min/max on #rating
   - Comment length: adjust maxlength on #comments
 
+
 ## 📋 Form Fields
 
 - Personal Info: First Name (required), Last Name (required), Email (required + validated), Age (optional, 1–80)  
