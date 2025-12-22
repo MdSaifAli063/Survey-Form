@@ -32,6 +32,7 @@ A beautiful, responsive survey form with a glassmorphism UI, inline validation, 
 Then visit:
 http://localhost:8080
 
+
 ## 🧩 How It Works
 
 - Progress: Computed from required fields (First Name, Email, Discovery, Consent). Valid email increases progress.  
