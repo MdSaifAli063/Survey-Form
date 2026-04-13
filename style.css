@@ -251,9 +251,6 @@ input[type="radio"] {
   min-height: 18px;
 }
 
-/* ===========================
-   Actions / Buttons
-   =========================== */
 .actions {
   text-align: center;
   margin-top: var(--s-6);
