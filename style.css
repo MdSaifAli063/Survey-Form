@@ -232,7 +232,6 @@ input[type="radio"] {
   accent-color: var(--primary);
 }
 
-/* Help row under textarea */
 .help-row {
   display: flex;
   justify-content: space-between;
@@ -241,7 +240,6 @@ input[type="radio"] {
   font-size: 0.9rem;
 }
 
-/* Errors */
 .error {
   border-color: var(--error) !important;
   box-shadow: 0 0 0 3px rgba(255, 107, 107, 0.25) !important;
