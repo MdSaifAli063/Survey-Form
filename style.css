@@ -285,7 +285,6 @@ input[type="radio"] {
 }
 .btn-primary[disabled] { opacity: 0.75; cursor: not-allowed; }
 
-/* Loading state */
 .btn-primary.loading {
   position: relative;
   color: transparent !important;
@@ -306,9 +305,6 @@ input[type="radio"] {
   to { transform: rotate(360deg); }
 }
 
-/* ===========================
-   Footer
-   =========================== */
 .page-footer {
   margin-top: var(--s-6);
   text-align: center;
@@ -316,9 +312,6 @@ input[type="radio"] {
   font-size: 0.95rem;
 }
 
-/* ===========================
-   Toasts
-   =========================== */
 .toast-wrap {
   position: fixed;
   inset: auto 0 18px 0;
@@ -347,9 +340,6 @@ input[type="radio"] {
 .toast.success { background: rgba(22, 163, 74, 0.9); }
 .toast.error { background: rgba(239, 68, 68, 0.9); }
 
-/* ===========================
-   Accessibility and Motion
-   =========================== */
 @media (prefers-reduced-motion: reduce) {
   * {
     transition: none !important;
