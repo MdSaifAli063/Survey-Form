@@ -49,7 +49,6 @@ body {
     var(--bg-img) center/cover no-repeat fixed;
 }
 
-/* Optional subtle light bloom */
 body::before {
   content: "";
   position: fixed;
