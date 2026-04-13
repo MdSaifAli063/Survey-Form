@@ -2,9 +2,8 @@
    Theme and Global
    =========================== */
 :root {
-  --bg-img: url('https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d?auto=format&fit=crop&w=1920&q=60');
+  --bg-img: url('https://wallpaperbat.com/img/812258-website-background-wallpaper-cool-simple-background-designs-1280x853-wallpaper-teahubio.jpg');
   --overlay: rgba(10, 14, 23, 0.65);
-
   --text: #eaf0f8;
   --muted: #c7d2e3;
   --primary: #6aa1ff;
