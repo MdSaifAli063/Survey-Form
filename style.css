@@ -196,7 +196,6 @@ textarea:hover {
   transform: translateY(-1px);
 }
 
-/* Range */
 .range-row {
   display: grid;
   grid-template-columns: 1fr auto;
@@ -208,7 +207,6 @@ input[type="range"] {
   accent-color: var(--primary);
 }
 
-/* Checkboxes and Radios */
 .option-list {
   list-style: none;
   padding: 0;
