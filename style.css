@@ -108,9 +108,6 @@ body::before {
   transition: width 200ms ease;
 }
 
-/* ===========================
-   Cards / Fieldsets
-   =========================== */
 .card {
   margin: 0 0 var(--s-5);
   padding: var(--s-5);
