@@ -64,9 +64,6 @@ body::before {
   text-align: center;
 }
 
-/* ===========================
-   Layout
-   =========================== */
 .page {
   max-width: 980px;
   margin: min(6vh, 4rem) auto;
